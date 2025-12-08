@@ -177,7 +177,7 @@
             </div>
           </article>
 
-          <!-- ARTWORK 3 (bottom-right, corrected) -->
+          <!-- ARTWORK 3 (bottom-right) -->
           <article class="artwork">
             <img src="artwork1.jpg" alt="Artwork 3 by fondanzione.pazzaglia" />
             <div class="artwork-title">Artwork 3</div>
@@ -193,10 +193,16 @@
       <section id="installation" style="margin-top: 40px;">
         <h2 class="section-title">Installation</h2>
         <div class="installation-wrapper">
-          <img src="installation1.jpg" alt="Installation by fondanzione.pazzaglia" />
+          <!-- change installationA.jpg below if your actual file is named differently -->
+          <img src="installationA.jpg"
+               alt="Installation by fondanzione.pazzaglia"
+               onerror="this.style.display='none'; document.getElementById('installation-error').style.display='block';" />
           <div class="installation-caption">
             installation, germany, 2025, acrylic glass.
           </div>
+          <p id="installation-error" style="display:none; margin-top:8px; font-size:12px; color:#c00;">
+            Image “installationA.jpg” could not be loaded. Make sure the file name in your repository matches exactly.
+          </p>
         </div>
       </section>
 
